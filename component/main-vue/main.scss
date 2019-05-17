@@ -1,0 +1,29 @@
+
+@import "../../common/pic-container.scss";
+.base {
+	.topbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 3em;
+		padding: 0 1em;
+		.iconfont {
+			font-size: 1.5em;
+			color: #333333;
+		}
+		.search-container {
+			width: 75%;
+		}
+    }
+    .separate-line {
+        height: 1px;
+        background-color: #eeeeee;
+    }
+	.bottom {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		background-color: #565000;
+    }
+    
+}
