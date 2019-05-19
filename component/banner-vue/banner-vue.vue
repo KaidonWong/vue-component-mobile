@@ -16,12 +16,12 @@
 			</div>
 			<div style="display:none">
 				<!-- 为了加载图片资源 -->
-				<img src="../../asset/img/banner/1.jpg" alt>
-				<img src="../../asset/img/banner/2.jpg" alt>
-				<img src="../../asset/img/banner/3.jpg" alt>
-				<img src="../../asset/img/banner/4.jpg" alt>
-				<img src="../../asset/img/banner/5.jpg" alt>
-				<img src="../../asset/img/banner/6.jpg" alt>
+				<img src="../../asset/img/faxian/banner/1.jpg" alt>
+				<img src="../../asset/img/faxian/banner/2.jpg" alt>
+				<img src="../../asset/img/faxian/banner/3.jpg" alt>
+				<img src="../../asset/img/faxian/banner/4.jpg" alt>
+				<img src="../../asset/img/faxian/banner/5.jpg" alt>
+				<img src="../../asset/img/faxian/banner/6.jpg" alt>
 			</div>
 		</div>
         <div class='button-container'>
@@ -121,7 +121,7 @@ export default {
 @import "../../common/pic-container.scss";
 .cover-mask {
     position: relative;
-	// overflow-x: hidden;
+	overflow-x: hidden;
 	.banner-container {
 		.banner {
 			float: left;

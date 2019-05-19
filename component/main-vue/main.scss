@@ -1,6 +1,6 @@
 
-@import "../../common/pic-container.scss";
 .base {
+    height: 100%;
 	.topbar {
 		display: flex;
 		justify-content: space-between;
@@ -19,11 +19,11 @@
         height: 1px;
         background-color: #eeeeee;
     }
-	.bottom {
-		position: absolute;
-		width: 100%;
-		bottom: 0;
-		background-color: #565000;
+    .middle-scroll {
+        overflow-y: scroll;
+        height: calc(100% - 6em);
+        width: 100%;
+
     }
     
 }
