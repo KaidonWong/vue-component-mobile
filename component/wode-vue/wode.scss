@@ -1,0 +1,62 @@
+.wode-base {
+    .header {
+        height: 3em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5em 1em;
+        .iconfont {
+            font-size: 1.5em;
+        }
+        .title {
+            font-size: 1.1em;
+            letter-spacing: 0.1em;
+        }
+    }
+    .download-alert {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.5em;
+        .iconfont {
+            color: #ee5555;
+        }
+        >div {
+            font-size: 0.8em; 
+            color: #999999;
+        }
+    }
+    .menus {
+        .menu {
+            padding: 0.7em 1em;
+            border-top: 1px solid #eeeeee; 
+            .iconfont {
+                font-size: 1.5em;
+            }
+            .icon-title {
+                float: left;
+                >span:nth-of-type(2) {
+                    position: relative;
+                    top: -0.1em;
+                    margin-left: 0.5em;
+                    font-size: 1em;
+                    line-height: 1;
+                }
+            }
+            .icon-arrow1 {
+                padding-top: 0.4em;
+                float: right;
+                font-size: 0.9em;
+                color: #aaaaaa;
+            }
+        }
+    }
+    .separate-div {
+        background-color: #eeeeee;
+        height: 0.5em;
+    }
+    .middle-scroll {
+        overflow-y: scroll;
+        height: calc(100% - 3em);
+    }
+}

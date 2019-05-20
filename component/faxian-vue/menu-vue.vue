@@ -46,7 +46,7 @@ export default {};
 			width: 3em;
 			height: 3em;
 			border-radius: 1.5em;
-			background: linear-gradient(135deg, #e97c7c, #ee0000);
+			background: linear-gradient(135deg, #e99999, #ee0000);
 			color: #ffffff;
 			text-align: center;
 			.iconfont {

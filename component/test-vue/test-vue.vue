@@ -1,7 +1,16 @@
 <template>
 	<div class="base">
-		<search-input-vue v-model="searchVal" placeholder="为你推荐 backstreet boys"></search-input-vue>
-        <div style="border: 1px solid #000"><banner-vue :picSrcArr="imgArr"></banner-vue></div>
+		<!-- <search-input-vue v-model="searchVal" placeholder="为你推荐 backstreet boys"></search-input-vue>
+		<div style="border: 1px solid #000">
+			<banner-vue :picSrcArr="imgArr"></banner-vue>
+		</div>-->
+		<div class="transition-test">
+			<div @click="showA = !showA">button</div>
+			<transition :name="transitionName">
+				<!-- <div class="A" v-if="showA">A</div> -->
+				<div class="B" v-if="!showA">B</div>
+			</transition>
+		</div>
 	</div>
 </template>
 <script>
@@ -15,7 +24,9 @@ export default {
 				"../../asset/img/banner/1.jpg",
 				"../../asset/img/banner/2.jpg",
 				"../../asset/img/banner/3.jpg"
-			]
+			],
+			transitionName: "inner",
+			showA: true
 		};
 	},
 	components: {
@@ -28,5 +39,22 @@ export default {
 <style lang="scss" scoped>
 .base {
 	margin: 20px;
+	.A {
+		background-color: #ee0000;
+	}
+	.B {
+		background-color: #00ee00;
+	}
+	.inner-enter-active,
+	.inner-leave-active {
+		transition: all 1s;
+	}
+	.inner-enter,
+	.inner-leave-to {
+		transform: translateX(10em);
+		opacity: 0;
+	}
 }
+</style>
+<style scoped>
 </style>

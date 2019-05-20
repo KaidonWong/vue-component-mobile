@@ -24,3 +24,8 @@ html,body {
 .tapdiv {
     -webkit-tap-highlight-color:rgba(0,0,0,0)
 }
+
+.separate-line {
+	height: 1px;
+	background-color: #eeeeee;
+}

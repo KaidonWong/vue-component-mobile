@@ -16,28 +16,28 @@ export default {
 			content: [
 				{
 					label: "发现",
-					icon: "icon-shouye",
-					event: "fx"
+					icon: "icon-home1",
+					event: "faxian"
 				},
 				{
 					label: "视频",
 					icon: "icon-shipin",
-					event: "sp"
+					event: "shipin"
 				},
 				{
 					label: "我的",
 					icon: "icon-yinle",
-					event: "wd"
+					event: "wode"
 				},
 				{
 					label: "朋友",
 					icon: "icon-qunzu",
-					event: "py"
+					event: "pengyou"
 				},
 				{
 					label: "账号",
 					icon: "icon-yonghu",
-					event: "zh"
+					event: "zhanghao"
 				}
 			]
 		};
@@ -53,7 +53,7 @@ export default {
 	methods: {
 		onClick: function(index,event) {
             this.selected = index;
-            this.$emit(this.content[index].event);
+            this.$emit('switchevent',this.content[index].event);
 		}
 	}
 };
@@ -65,9 +65,10 @@ export default {
 	padding: 0.2em 1.5em;
 	align-items: center;
 	position: absolute;
-	width: 100%;
+    width: 100%;
+    height: 3em;
 	bottom: 0;
-	background-color: rgba($color: #eeeeee, $alpha: 0.9);
+	background-color: #eeeeee;
 	.item {
 		.bg {
 			height: 1.6em;
@@ -89,7 +90,7 @@ export default {
 		}
 		&.on {
 			.bg {
-				background-color: #ee0000;
+				background: linear-gradient(135deg, #e99999, #ee0000);
 				.iconfont {
 					color: #ffffff;
 					transform: scale(0.7);
