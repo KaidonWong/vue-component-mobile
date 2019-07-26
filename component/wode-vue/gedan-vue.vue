@@ -1,7 +1,7 @@
 <template>
 	<div class="gd-base" :class="onClass">
-		<div class="header">
-			<div class="left" @click="onToggle">
+		<div class="header" @click="onToggle">
+			<div class="left">
 				<div class="iconfont icon-arrowdown"></div>
 				<div>
 					{{title}}
@@ -42,7 +42,7 @@ export default {
 	data: function() {
 		return {
 			onClass: {
-				on: false
+				on: true
 			}
 		};
 	},
